@@ -109,6 +109,8 @@ services:
     command: ["/app/docker/docker-frontend.sh"]
     env_file: docker/.env
     depends_on: *superset-depends-on
+    environment:
+      CYPRESS_CACHE_FOLDER: "/tmp/cypress-cache"
     volumes: *superset-volumes
 
   superset-worker:

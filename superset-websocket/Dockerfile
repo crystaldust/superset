@@ -18,6 +18,7 @@ WORKDIR /home/superset-websocket
 
 COPY . .
 
+RUN npm config set registry https://registry.npm.taobao.org
 RUN npm ci
 RUN npm run build
 

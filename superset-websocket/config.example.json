@@ -16,6 +16,6 @@
     "ssl": false
   },
   "redisStreamPrefix": "async-events-",
-  "jwtSecret": "CHANGE-ME",
+  "jwtSecret": "CHANGE-ME-to-a-long-enough-secret-at-least-32-bytes-which-is-required-by-jwt",
   "jwtCookieName": "async-token"
 }
